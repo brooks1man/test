@@ -7,7 +7,9 @@
 // @match       https://gsu.libinsight.com/dataseta.php
 // @grant       none
 // @downloadURL https://github.com/brooks1man/test/raw/master/test.js
+// @updateURL   https://github.com/brooks1man/test/raw/master/test.js
 // @homepageURL https://github.com/brooks1man/test
+// @supportURL  https://library.gsu.edu
 // ==/UserScript==
 
 var token = document.querySelector('input[name="csrf_token"]');
