@@ -6,7 +6,7 @@
 // @version     1.0
 // @author      -
 // @description Adds a download all reports item to the admin menu when on a dataset page in LibInsight.
-// @downloadURL 
+// @downloadURL https://github.com/brooks1man/test/raw/master/test.js
 // @homepageURL https://github.com/brooks1man/test
 // ==/UserScript==
 
