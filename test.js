@@ -2,7 +2,7 @@
 // @name        Download All Reports - libinsight.com
 // @namespace   https://github.com/brooks1man
 // @author      brooks1man
-// @version     1.1
+// @version     1.2
 // @description Adds a download all reports item to the admin menu when on a dataset page in LibInsight.
 // @match       https://gsu.libinsight.com/dataseta.php
 // @grant       none
@@ -12,6 +12,7 @@
 
 var token = document.querySelector('input[name="csrf_token"]');
 
+// Extra comment for funsies.
 // Only if we find a CSRF token.
 if(token) {
    li = document.createElement('li');
