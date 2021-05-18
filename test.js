@@ -3,6 +3,7 @@
 // @namespace   https://github.com/brooks1man
 // @author      brooks1man
 // @version     1.2
+// @license     none
 // @description Adds a download all reports item to the admin menu when on a dataset page in LibInsight.
 // @match       https://gsu.libinsight.com/dataseta.php
 // @grant       none
