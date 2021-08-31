@@ -14,7 +14,7 @@ function Main(props) {
       <section>
          <p>We serve the most {props.adjective} food around.</p>
          <img src={restaurant} height={300} alt='napkin and silverware' />
-         <ul>
+         <ul style={{padding:0}}>
             {props.dishes.map((dish) => (
                <li key={dish.id}>{dish.title}</li>
             ))}
@@ -41,9 +41,9 @@ const dishObjects = dishes.map((dish, i) => ({id: i, title: dish}));
 
 function App() {
    return (
-      <div className="App">
-         <Header name="Matt" />
-         <Main adjective="amazing" dishes={dishObjects} />
+      <div className='App'>
+         <Header name='Matt' />
+         <Main adjective='amazing' dishes={dishObjects} />
          <Footer year={new Date().getFullYear()} />
       </div>
    );
