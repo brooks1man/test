@@ -1,50 +1,23 @@
+import React from 'react';
 import './App.css';
-import restaurant from './restaurant.jpg';
-
-function Header(props) {
-   return (
-      <header>
-         <h1>{props.name}'s Kitchen</h1>
-      </header>
-   );
-}
-
-function Main(props) {
-   return (
-      <section>
-         <p>We serve the most {props.adjective} food around.</p>
-         <img src={restaurant} height={300} alt='napkin and silverware' />
-         <ul style={{padding:0}}>
-            {props.dishes.map((dish) => (
-               <li key={dish.id}>{dish.title}</li>
-            ))}
-         </ul>
-      </section>
-   )
-}
-
-function Footer(props) {
-   return (
-      <footer><p>Copyright {props.year}</p></footer>
-   )
-}
-
-const dishes = [
-   'Macaroni and Cheese',
-   'Steak',
-   'Brussel Sprouts',
-   'Mashed Potatoes'
-];
-
-const dishObjects = dishes.map((dish, i) => ({id: i, title: dish}));
+import { Routes, Route } from 'react-router-dom';
+import { Home, About, Events, Contact, Services, CompanyHistory, Location, Whoops404 } from './pages';
 
 
 function App() {
    return (
-      <div className='App'>
-         <Header name='Matt' />
-         <Main adjective='amazing' dishes={dishObjects} />
-         <Footer year={new Date().getFullYear()} />
+      <div>
+         <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/about' element={<About />}>
+               <Route path='/services' element={<Services />} />
+               <Route path='/history' element={<CompanyHistory />} />
+               <Route path='/location' element={<Location />} />
+            </Route>
+            <Route path='/events' element={<Events />} />
+            <Route path='/contact' element={<Contact />} />
+            <Route path='*' element={<Whoops404 />} />
+         </Routes>
       </div>
    );
 }
