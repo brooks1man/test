@@ -9,7 +9,7 @@ app.use(bodyParser.json());
 
 const withDB = async (operations, res) => {
    try {
-      const client = await MongoClient.connect('mongodb://127.0.0.1:27017', { useNewUrlParser: true });
+      const client = await MongoClient.connect('mongodb://localhost:27017', { useNewUrlParser: true });
       const db = client.db('my-blog');
 
       await operations(db);
@@ -17,7 +17,7 @@ const withDB = async (operations, res) => {
       client.close();
    }
    catch (error) {
-      res.status(500).json({ message: 'Error connecting to db', error });
+      res.status(500).json({ message: 'Error connecting to db.', error });
    }
 };
 
@@ -64,4 +64,4 @@ app.post('/api/articles/:name/add-comment', (req, res) => {
 });
 
 
-app.listen(8000, () => console.log('Listening on port 8000'));
+app.listen(8000, () => console.log('Listening on port 8000.'));
