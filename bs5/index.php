@@ -24,6 +24,13 @@
       <div style="height:200px; width:200px;" class="bg-primary position-relative">
          <a href="#" class="text-danger stretched-link">This is a link.</a>
       </div>
+
+      <h2>Grid + Offset</h2>
+      <div class="row">
+         <div class="col offset-2 bg-primary">Col 1</div>
+         <div class="col bg-secondary">Col 2</div>
+         <div class="col bg-info">Col 3</div>
+      </div>
    </main>
 </body>
 </html>
