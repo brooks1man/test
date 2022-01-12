@@ -14,8 +14,16 @@
    <main class="container mt-4">
       <h1>BS5 Demo <i class="bi bi-emoji-smile text-primary"></i></h1>
 
-      <p class="lead">Ad aliquip in deserunt do est velit aliquip <a href="#" class="link-info">labore reprehenderit consectetur</a> sint eu labore aliqua. Ullamco ut aliqua et ea. Elit aliquip est et nostrud non nostrud et sit ipsum esse est. Ea esse voluptate incididunt dolore voluptate amet esse duis.</a>
+      <h2>Select None</h2>
+      <p class="lead user-select-none">Ad aliquip in deserunt do est velit aliquip <a href="#" class="link-info">labore reprehenderit consectetur</a> sint eu labore aliqua. Ullamco ut aliqua et ea. Elit aliquip est et nostrud non nostrud et sit ipsum esse est. Ea esse voluptate incididunt dolore voluptate amet esse duis.</p>
 
+      <h2>Select All</h2>
+      <p class="user-select-all">Ullamco duis nisi fugiat fugiat amet. Consequat cupidatat irure ut ullamco magna labore ut. Consequat pariatur adipisicing culpa duis labore irure est adipisicing in do. Fugiat nisi sit excepteur excepteur aliquip magna laboris laboris laborum dolore. Pariatur eu qui ullamco incididunt fugiat enim aliquip commodo ut laboris. Mollit veniam deserunt ullamco elit magna nostrud laborum duis in consequat commodo velit aliqua.</p>
+
+      <h2>Stretched Link</h2>
+      <div style="height:200px; width:200px;" class="bg-primary position-relative">
+         <a href="#" class="text-danger stretched-link">This is a link.</a>
+      </div>
    </main>
 </body>
 </html>
